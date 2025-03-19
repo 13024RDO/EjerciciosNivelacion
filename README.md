@@ -19,8 +19,9 @@ Este proyecto permite escribir un mensaje en una caja de texto y mostrarlo en un
    ```sh
    python app.py
    ```
-4. Escribir en la caja y presionar **Enter**.
-5. Usar el botón para cambiar los colores.
+   o correr el codigo en un editor
+5. Escribir en la caja y presionar **Enter**.
+6. Usar el botón para cambiar los colores.
 
 
 
