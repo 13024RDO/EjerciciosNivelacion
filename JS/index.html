@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EjercicioJS</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Caja de texto</h1>
+        <input type="text" id="cajaTexto" placeholder="Escribe algo aqui y presiona Enter">
+
+        <button id="botonCambiar">Cambiar Color la caja de texto</button>
+    </div>
+   
+    
+
+
+    <script>
+
+        //Caja de texto con mensaje emergente
+        let cajaTexto = document.getElementById("cajaTexto");
+
+        cajaTexto.addEventListener("keypress", function(event){
+            if(event.key === "Enter"){
+                alert(cajaTexto.value)
+            }
+        });
+
+        //Boton para cambiar de color
+
+        let boton = document.getElementById("botonCambiar");
+
+        const colores = [
+    { fondo: "white", texto: "black" },  
+    { fondo: "black", texto: "white" },  
+    { fondo: "lightblue", texto: "red" } 
+];
+
+let indice = 0;
+
+boton.addEventListener("click", function(){
+    // Aplicamos los colores según el índice actual
+    cajaTexto.style.backgroundColor = colores[indice].fondo;
+    cajaTexto.style.color = colores[indice].texto;
+
+    // Pasamos al siguiente color usando el indice como referencia para la posicion de los colores
+    indice = (indice + 1) % colores.length;
+})
+    </script>
+</body>
+</html>
