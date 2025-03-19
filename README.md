@@ -15,11 +15,10 @@ Este proyecto permite escribir un mensaje en una caja de texto y mostrarlo en un
 ### Python:
 1. Asegurarse de tener Python 3 instalado.
 2. Instalar Tkinter si no está disponible.
-3. Ejecutar `app.py` con el siguiente comando:
+3. Ejecutar `app.py` con el siguiente comando o correr el codigo en un editor:
    ```sh
    python app.py
    ```
-   o correr el codigo en un editor
 5. Escribir en la caja y presionar **Enter**.
 6. Usar el botón para cambiar los colores.
 
